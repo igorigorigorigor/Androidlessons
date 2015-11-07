@@ -3,12 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ P0051_LayoutFiles/ P0051_LayoutFiles.iml" filepath="$PROJECT_DIR$/ P0051_LayoutFiles/ P0051_LayoutFiles.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ P0051_LayoutFiles/ P0051_LayoutFiles.iml" filepath="$PROJECT_DIR$/ P0051_LayoutFiles/ P0051_LayoutFiles.iml" />
       <module fileurl="file://$PROJECT_DIR$/ p0031firstproject/ p0031firstproject.iml" filepath="$PROJECT_DIR$/ p0031firstproject/ p0031firstproject.iml" />
       <module fileurl="file://$PROJECT_DIR$/Androidlessons.iml" filepath="$PROJECT_DIR$/Androidlessons.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0041basicviews/p0041basicviews.iml" filepath="$PROJECT_DIR$/p0041basicviews/p0041basicviews.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0051layoutfiles/p0051layoutfiles.iml" filepath="$PROJECT_DIR$/p0051layoutfiles/p0051layoutfiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p0061layouts/p0061layouts.iml" filepath="$PROJECT_DIR$/p0061layouts/p0061layouts.iml" />
     </modules>
   </component>
 </project>
