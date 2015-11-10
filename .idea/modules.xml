@@ -9,7 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/p0051layoutfiles/p0051layoutfiles.iml" filepath="$PROJECT_DIR$/p0051layoutfiles/p0051layoutfiles.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0061layouts/p0061layouts.iml" filepath="$PROJECT_DIR$/p0061layouts/p0061layouts.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0072layoutprop/p0072layoutprop.iml" filepath="$PROJECT_DIR$/p0072layoutprop/p0072layoutprop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/viewbyid/viewbyid.iml" filepath="$PROJECT_DIR$/viewbyid/viewbyid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p0081viewbyid/viewbyid.iml" filepath="$PROJECT_DIR$/p0081viewbyid/viewbyid.iml" />
     </modules>
   </component>
 </project>
