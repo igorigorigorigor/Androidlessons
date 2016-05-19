@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/p0111resvalues/p0111resvalues.iml" filepath="$PROJECT_DIR$/p0111resvalues/p0111resvalues.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0121logandmess/p0121logandmess.iml" filepath="$PROJECT_DIR$/p0121logandmess/p0121logandmess.iml" />
       <module fileurl="file://$PROJECT_DIR$/p0131menusimple/p0131menusimple.iml" filepath="$PROJECT_DIR$/p0131menusimple/p0131menusimple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p0141menuadv/p0141menuadv.iml" filepath="$PROJECT_DIR$/p0141menuadv/p0141menuadv.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewbyid/viewbyid.iml" filepath="$PROJECT_DIR$/viewbyid/viewbyid.iml" />
     </modules>
   </component>
