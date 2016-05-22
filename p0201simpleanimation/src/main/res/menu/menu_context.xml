@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/myalpha"
+            android:title="Alpha"></item>
+        <item android:id="@+id/mycombo"
+            android:title="Combo"></item>
+        <item android:id="@+id/myrotate"
+            android:title="Rotate"></item>
+        <item android:id="@+id/myscale"
+            android:title="Scale"></item>
+        <item android:id="@+id/mytrans"
+            android:title="Trans"></item>
+</menu>
