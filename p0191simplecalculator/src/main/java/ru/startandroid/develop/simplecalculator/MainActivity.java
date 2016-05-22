@@ -55,10 +55,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         float result = 0;
 
         if (TextUtils.isEmpty(etFirstOperand.getText())){
-            Toast.makeText(this, "First operand is empty", Toast.LENGTH_SHORT);
+            Toast.makeText(this, "First operand is empty", Toast.LENGTH_SHORT).show();
             return;
         } else if (TextUtils.isEmpty(etFirstOperand.getText())){
-            Toast.makeText(this, "Second operand is empty", Toast.LENGTH_SHORT);
+            Toast.makeText(this, "Second operand is empty", Toast.LENGTH_SHORT).show();
             return;
         }
         firstOperand = Float.valueOf(etFirstOperand.getText().toString());
@@ -79,6 +79,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 operator = "*";
                 break;
             case R.id.btnDivide:
+                if (Float.valueOf(etSecondOperand.getText().toString()) == 0){
+                    Toast.makeText(this, "Second operand is ZERO", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 result = firstOperand / secondOperand;
                 operator = "/";
                 break;
