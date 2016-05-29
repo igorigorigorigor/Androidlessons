@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Hello, World!"
+        android:textSize="30dp"
+        android:id="@+id/tvView"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TableLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btnColor">
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allignment"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="3"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btnAllignment">
+            </Button>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

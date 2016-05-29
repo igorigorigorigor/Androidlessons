@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TableLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow1">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Left"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:id="@+id/btnLeft">
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Center"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:id="@+id/btnCenter">
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Right"
+                android:textSize="30dp"
+                android:layout_weight="1"
+                android:id="@+id/btnRight">
+            </Button>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
