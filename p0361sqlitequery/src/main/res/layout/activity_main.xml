@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Справочник стран"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Все записи"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnAllRecords"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+            <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Функция"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:id="@+id/btnFunction"/>
+            <EditText android:layout_weight="10"
+                android:id="@+id/etFunction"/>
+        </TableRow>
+        <TableRow>
+            <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Население > "
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:id="@+id/btnPopulationMore"/>
+            <EditText android:layout_weight="10"
+                android:id="@+id/etPopulationMore"/>
+        </TableRow>
+        <TableRow>
+            <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Население по региону"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:id="@+id/btnPopulationRegion"/>
+        </TableRow>
+        <TableRow>
+            <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Население по региону > "
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:id="@+id/btnPopulationRegionMore"/>
+            <EditText android:layout_weight="10"
+                android:id="@+id/etPopulationRegionRow"/>
+        </TableRow>
+        <TableRow>
+            <Button android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Сортировка"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:id="@+id/btnSort"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+            <LinearLayout android:orientation="vertical"
+                android:layout_weight="10">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Наименование"
+                        android:id="@+id/rbName" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Население"
+                        android:id="@+id/rbPopulation"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Регион"
+                        android:id="@+id/rbRegion"/>
+                </RadioGroup>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
