@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="6dp"
+    android:id="@+id/llItem">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvItemDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day N. "/>
+        <TextView
+            android:id="@+id/tvItemLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load: XX %"/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/pbItemResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginTop="6dp"/>
+
+</LinearLayout>
