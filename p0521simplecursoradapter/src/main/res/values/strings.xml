@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Simple Cursor Adapter</string>
+    <string name="add_record">Add record</string>
+    <string name="delete_record">Delete record</string>
+</resources>
