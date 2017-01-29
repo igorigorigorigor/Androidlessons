@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 /**
  * Created by Freeman on 24.01.2017.
@@ -14,16 +15,16 @@ public class DB {
     private static final String DB_NAME = "mydb";
     private static final int DB_VERSION = 1;
 
-    private static final String COMPANY_TABLE = "company";
-    private static final String COMPANY_COLUMN_ID = "_id";
-    private static final String COMPANY_COLUMN_NAME = "name";
-    private static final String COMPANY_TABLE_CREATE = "create table " + COMPANY_TABLE + " (" + COMPANY_COLUMN_ID + " primary key integer, " + COMPANY_COLUMN_NAME + " text);";
+    public static final String COMPANY_TABLE = "company";
+    public static final String COMPANY_COLUMN_ID = "_id";
+    public static final String COMPANY_COLUMN_NAME = "name";
+    private static final String COMPANY_TABLE_CREATE = "create table " + COMPANY_TABLE + " (" + COMPANY_COLUMN_ID + " integer primary key autoincrement, " + COMPANY_COLUMN_NAME + " text);";
 
-    private static final String PHONE_TABLE = "phone";
-    private static final String PHONE_COLUMN_ID = "_id";
-    private static final String PHONE_COLUMN_NAME = "name";
-    private static final String PHONE_COLUMN_COMPANY = "company";
-    private static final String PHONE_TABLE_CREATE = "create table " + PHONE_TABLE + " (" + PHONE_COLUMN_ID + " primary key integer, " + PHONE_COLUMN_NAME + " text, " + PHONE_COLUMN_COMPANY + " integer);";
+    public static final String PHONE_TABLE = "phone";
+    public static final String PHONE_COLUMN_ID = "_id";
+    public static final String PHONE_COLUMN_NAME = "name";
+    public static final String PHONE_COLUMN_COMPANY = "company";
+    private static final String PHONE_TABLE_CREATE = "create table " + PHONE_TABLE + " (" + PHONE_COLUMN_ID + " integer primary key autoincrement, " + PHONE_COLUMN_NAME + " text, " + PHONE_COLUMN_COMPANY + " integer);";
 
     private Context mContext;
     private DBHelper mDBHelper;
@@ -67,6 +68,7 @@ public class DB {
             String[] company_names = new String[]{"LG", "Samsung", "Apple"};
             for (int i = 0; i < company_names.length; i++ ){
                 cv.put(COMPANY_COLUMN_NAME, company_names[i]);
+                Log.d("DB", cv.toString());
                 sqLiteDatabase.insert(COMPANY_TABLE, null, cv);
             };
             cv.clear();
@@ -76,6 +78,7 @@ public class DB {
             for (int i = 0; i < lg_names.length; i++ ){
                 cv.put(PHONE_COLUMN_NAME, lg_names[i]);
                 cv.put(PHONE_COLUMN_COMPANY, 1);
+                Log.d("DB", cv.toString());
                 sqLiteDatabase.insert(PHONE_TABLE, null, cv);
             };
             cv.clear();
@@ -84,6 +87,7 @@ public class DB {
             for (int i = 0; i < samsung_names.length; i++ ){
                 cv.put(PHONE_COLUMN_NAME, samsung_names[i]);
                 cv.put(PHONE_COLUMN_COMPANY, 2);
+                Log.d("DB", cv.toString());
                 sqLiteDatabase.insert(PHONE_TABLE, null, cv);
             };
             cv.clear();
@@ -92,6 +96,7 @@ public class DB {
             for (int i = 0; i < samsung_names.length; i++ ){
                 cv.put(PHONE_COLUMN_NAME, apple_names[i]);
                 cv.put(PHONE_COLUMN_COMPANY, 3);
+                Log.d("DB", cv.toString());
                 sqLiteDatabase.insert(PHONE_TABLE, null, cv);
             };
             cv.clear();
