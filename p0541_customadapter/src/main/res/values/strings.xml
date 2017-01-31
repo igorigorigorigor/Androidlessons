@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">P0541_CustomAdapter</string>
+    <string name="box">Корзина</string>
+    <string name="def">default</string>
+</resources>
